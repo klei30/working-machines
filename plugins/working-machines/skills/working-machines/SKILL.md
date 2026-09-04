@@ -1,11 +1,17 @@
 ---
 name: working-machines
-description: Connect Cursor to 1,400+ apps and 15,000+ machine-ready actions via Working Machines hosted MCP.
+description: Connect Cursor remotely to 1,400+ apps and 15,000+ machine-ready actions via Working Machines hosted MCP with enterprise credential security.
 ---
 
 # Working Machines Skill
 
-Working Machines provides the application layer for AI agents, connecting Cursor to 1,400+ apps and 15,000+ machine-ready actions.
+Working Machines provides the application layer for AI agents, connecting Cursor to 1,400+ apps and 15,000+ machine-ready actions through one secure connection.
+
+## Safety & Credential Isolation Guarantees
+
+- **Credentials Are Not Context**: API keys and OAuth tokens remain strictly behind Working Machines' execution boundary and never enter agent context or prompt buffers.
+- **Minimal Capability Scope**: Discover and request only the minimal actions necessary to complete the task intent.
+- **Auditable Records**: Every action returns a structured, inspectable, and verifiable record.
 
 ## Execution Workflow
 
