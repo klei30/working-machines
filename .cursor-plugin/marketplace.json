@@ -1,23 +1,18 @@
 {
-  "name": "cursor-plugin-starters",
+  "name": "working-machines",
   "owner": {
-    "name": "Your Org",
-    "email": "plugins@example.com"
+    "name": "Working Machines",
+    "email": "support@workingmachines.dev"
   },
   "metadata": {
-    "description": "Starter marketplace template for Cursor plugins",
-    "version": "0.1.0"
+    "description": "Official Cursor plugin marketplace for Working Machines",
+    "version": "1.0.0"
   },
   "plugins": [
     {
-      "name": "starter-simple",
-      "source": "./plugins/starter-simple",
-      "description": "Minimal plugin with rules and skills only"
-    },
-    {
-      "name": "starter-advanced",
-      "source": "./plugins/starter-advanced",
-      "description": "Full-featured plugin with rules, skills, agents, commands, hooks, and MCP"
+      "name": "working-machines",
+      "source": "./plugins/working-machines",
+      "description": "Connect Cursor to 1,400+ apps and 15,000+ machine-ready actions via Working Machines hosted MCP."
     }
   ]
 }

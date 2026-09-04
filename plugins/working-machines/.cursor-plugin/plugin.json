@@ -1,0 +1,19 @@
+{
+  "name": "working-machines",
+  "displayName": "Working Machines",
+  "version": "1.0.0",
+  "description": "Official Cursor plugin wrapper for Working Machines hosted MCP server. Connect Cursor to 1,400+ apps and 15,000+ machine-ready actions.",
+  "author": {
+    "name": "Working Machines",
+    "url": "https://www.workingmachines.dev"
+  },
+  "license": "MIT",
+  "keywords": [
+    "working-machines",
+    "mcp",
+    "automation",
+    "integrations",
+    "apps"
+  ],
+  "logo": "assets/logo.png"
+}

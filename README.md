@@ -1,34 +1,90 @@
-# Cursor plugin template
+# Working Machines - Cursor Plugin Repository
 
-Build and publish Cursor Marketplace plugins from a single repo.
+Official Cursor plugin repository for [Working Machines](https://www.workingmachines.dev).
 
-Two starter plugins are included:
+Connect Cursor to **1,400+ apps** and **15,000+ machine-ready actions** through a secure, remote Model Context Protocol (MCP) server.
 
-- **starter-simple**: rules and skills only
-- **starter-advanced**: rules, skills, agents, commands, hooks, MCP, and scripts
+<p align="center">
+  <img src="plugins/working-machines/assets/logo.png" alt="Working Machines Logo" width="128" height="128" />
+</p>
 
-## Getting started
+---
 
-[Use this template](https://github.com/cursor/plugin-template/generate) to create a new repository, then customize:
+## Repository Structure
 
-1. `.cursor-plugin/marketplace.json`: set marketplace `name`, `owner`, and `metadata`.
-2. `plugins/*/.cursor-plugin/plugin.json`: set `name` (lowercase kebab-case), `displayName`, `author`, `description`, `keywords`, `license`, and `version`.
-3. Replace placeholder rules, skills, agents, commands, hooks, scripts, and logos.
+This repository is structured according to the official Cursor plugin marketplace template:
 
-To add more plugins, see `docs/add-a-plugin.md`.
+```text
+working-machines/
+├── .cursor-plugin/
+│   └── marketplace.json
+├── plugins/
+│   └── working-machines/
+│       ├── .cursor-plugin/
+│       │   └── plugin.json
+│       ├── assets/
+│       │   └── logo.png
+│       ├── skills/
+│       │   └── working-machines/
+│       │       └── SKILL.md
+│       ├── mcp.json
+│       └── README.md
+├── scripts/
+│   └── validate-template.mjs
+├── README.md
+├── CHANGELOG.md
+├── LICENSE
+├── NOTICE
+└── .gitignore
+```
 
-## Single plugin vs multi-plugin
+---
 
-This template defaults to **multi-plugin** (multiple plugins in one repo).
+## How It Works
 
-For a **single plugin**, move your plugin folder contents to the repository root, keep one `.cursor-plugin/plugin.json`, and remove `.cursor-plugin/marketplace.json`.
+Cursor agents equipped with the Working Machines plugin follow this discovery and execution model:
 
-## Submission checklist
+```text
+list_apps
+      ↓
+list_connections
+      ↓
+search_actions
+      ↓
+get_action_guide
+      ↓
+execute_action
+      ↓
+verify result
+```
 
-- Each plugin has a valid `.cursor-plugin/plugin.json`.
-- Plugin names are unique, lowercase, and kebab-case.
-- `.cursor-plugin/marketplace.json` entries map to real plugin folders.
-- All frontmatter metadata is present in rule, skill, agent, and command files.
-- Logos are committed and referenced with relative paths.
-- `node scripts/validate-template.mjs` passes.
-- Repository link is ready for submission to the Cursor team (Slack or `kniparko@anysphere.com`).
+1. **`list_apps`**: Discover supported third-party application integrations.
+2. **`list_connections`**: Check active user authentications.
+3. **`search_actions`**: Find relevant machine-ready actions.
+4. **`get_action_guide`**: Retrieve action schema and execution parameter guides.
+5. **`execute_action`**: Execute the action securely.
+6. **Verify Result**: Inspect execution outputs and return feedback to the user.
+
+---
+
+## Validation & Quality Checks
+
+Run the template validator to verify manifest and component compliance:
+
+```bash
+node scripts/validate-template.mjs
+```
+
+---
+
+## Documentation & Support
+
+- **Documentation**: [https://www.workingmachines.dev/docs](https://www.workingmachines.dev/docs)
+- **App Dashboard**: [https://app.workingmachines.dev](https://app.workingmachines.dev)
+
+---
+
+## License & Notice
+
+- This wrapper repository is licensed under the [MIT License](LICENSE).
+- See the [NOTICE](NOTICE) file for proprietary details regarding Working Machines backend infrastructure and services.

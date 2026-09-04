@@ -1,0 +1,8 @@
+Working Machines - Cursor Plugin Wrapper
+Copyright (c) 2026 Working Machines Inc.
+
+This repository contains only the open-source client-side Cursor plugin wrapper, metadata, skills, and configuration for connecting to the Working Machines hosted Model Context Protocol (MCP) server.
+
+The Working Machines hosted backend, application integrations, action discovery engine, authentication & credential infrastructure, security sandbox, and billing services remain proprietary software owned by Working Machines Inc.
+
+Access to and use of the hosted MCP endpoint (https://app.workingmachines.dev/mcp) and related services are governed by the Working Machines Terms of Service and Privacy Policy available at https://www.workingmachines.dev.
