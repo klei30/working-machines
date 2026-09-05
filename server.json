@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.klei30/working-machines",
   "title": "Working Machines",
-  "description": "Discover and execute structured business-application actions through one OAuth-protected MCP server.",
-  "version": "1.0.1",
+  "description": "Connect Cursor and AI agents to 1,500+ apps and 15,000+ machine-ready actions through one OAuth-protected MCP server.",
+  "version": "1.0.2",
   "websiteUrl": "https://www.workingmachines.dev",
   "repository": {
     "url": "https://github.com/klei30/working-machines",
