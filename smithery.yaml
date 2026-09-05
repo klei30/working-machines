@@ -31,7 +31,7 @@ systemInstructions: |
 metadata:
   name: "working-machines"
   displayName: "Working Machines"
-  description: "Connect Cursor and AI agents to 1,500+ apps and 15,000+ machine-ready actions via secure MCP server."
-  icon: "https://raw.githubusercontent.com/klei30/working-machines/main/assets/logo.png"
+  description: "Connect Cursor and AI agents to 1,400+ apps and 15,000+ machine-ready actions through a secure remote MCP server."
+  icon: "https://raw.githubusercontent.com/klei30/working-machines/main/plugins/working-machines/assets/logo.png"
   website: "https://www.workingmachines.dev"
   repository: "https://github.com/klei30/working-machines"

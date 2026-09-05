@@ -1,16 +1,19 @@
 {
   "name": "working-machines",
   "displayName": "Working Machines",
-  "version": "1.0.0",
-  "description": "Official Cursor plugin wrapper for Working Machines. Connect Cursor remotely to 1,400+ apps and 15,000+ machine-ready actions through a secure, credential-isolated application layer.",
+  "version": "1.0.1",
+  "description": "Working Machines remote MCP server for Cursor. Connect to 1,400+ apps and 15,000+ machine-ready actions through a credential-isolated application layer.",
   "author": {
     "name": "Working Machines",
-    "url": "https://www.workingmachines.dev"
+    "url": "https://www.workingmachines.dev/agents/cursor"
   },
   "license": "MIT",
   "keywords": [
     "working-machines",
-    "mcp",
+    "cursor-mcp",
+    "mcp-server",
+    "remote-mcp",
+    "ai-agent-integrations",
     "automation",
     "integrations",
     "security",

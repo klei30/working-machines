@@ -1,4 +1,4 @@
-# Working Machines - Cursor Plugin Repository
+# Working Machines MCP Server for Cursor
 
 Official Cursor plugin repository for [Working Machines](https://www.workingmachines.dev).
 
@@ -111,6 +111,7 @@ node scripts/validate-template.mjs
 ## Documentation & Links
 
 - **Website**: [https://www.workingmachines.dev](https://www.workingmachines.dev)
+- **Cursor Integration Guide**: [https://www.workingmachines.dev/agents/cursor](https://www.workingmachines.dev/agents/cursor)
 - **Documentation**: [https://www.workingmachines.dev/docs](https://www.workingmachines.dev/docs)
 - **App Dashboard**: [https://app.workingmachines.dev](https://app.workingmachines.dev)
 

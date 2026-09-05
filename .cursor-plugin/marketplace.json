@@ -5,14 +5,14 @@
     "email": "support@workingmachines.dev"
   },
   "metadata": {
-    "description": "Official Cursor plugin marketplace for Working Machines",
-    "version": "1.0.0"
+    "description": "Official Working Machines remote MCP server plugin for Cursor",
+    "version": "1.0.1"
   },
   "plugins": [
     {
       "name": "working-machines",
       "source": "./plugins/working-machines",
-      "description": "Connect Cursor to 1,400+ apps and 15,000+ machine-ready actions via Working Machines hosted MCP."
+      "description": "Connect Cursor to 1,400+ apps and 15,000+ actions through the Working Machines remote MCP server."
     }
   ]
 }

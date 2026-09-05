@@ -1,6 +1,8 @@
-# Working Machines Plugin Package
+# Working Machines MCP Server Plugin for Cursor
 
 Official Cursor plugin for [Working Machines](https://www.workingmachines.dev).
+
+See the [Cursor integration guide](https://www.workingmachines.dev/agents/cursor) for setup, workflow examples, and security boundaries.
 
 Connect Cursor remotely to **1,400+ apps** and **15,000+ machine-ready actions** through one secure, hosted Model Context Protocol (MCP) server.
 

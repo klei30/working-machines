@@ -5,6 +5,14 @@ All notable changes to the Working Machines Cursor Plugin wrapper will be docume
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.4] - 2026-09-05
+
+### Changed
+- Restored the canonical Working Machines website URL in the Official MCP Registry manifest.
+- Aligned catalog claims with the validated 1,409-app source catalog.
+- Improved Cursor and MCP marketplace titles, descriptions, keywords, and landing-page links.
+- Corrected the Smithery logo URL.
+
 ## [1.0.0] - 2026-09-05
 
 ### Added
