@@ -1,0 +1,37 @@
+# Smithery.ai Configuration for Working Machines MCP Server
+# https://smithery.ai/docs/config
+
+startCommand:
+  type: "http"
+  url: "https://app.workingmachines.dev/mcp"
+
+# Config schema for Smithery UI and connection setup
+configSchema:
+  type: "object"
+  properties:
+    authorizationToken:
+      type: "string"
+      title: "Authorization Token"
+      description: "Working Machines OAuth or API bearer token for executing actions."
+      x-from: "header"
+      x-header-name: "Authorization"
+
+# Agent guidance and interaction rules
+systemInstructions: |
+  Working Machines provides the application layer for AI agents, connecting Cursor to 1,400+ apps and 15,000+ machine-ready actions.
+  Follow this sequential execution model:
+  1. list_apps: Discover supported third-party integrations.
+  2. list_connections: Verify active user authentications.
+  3. search_actions: Find machine actions by intent.
+  4. get_action_guide: Retrieve input parameter schemas and execution guidelines.
+  5. execute_action: Execute validated parameters securely.
+  6. Verify result: Inspect structured output payload.
+
+# Server metadata & branding
+metadata:
+  name: "working-machines"
+  displayName: "Working Machines"
+  description: "Connect Cursor and AI agents to 1,500+ apps and 15,000+ machine-ready actions via secure MCP server."
+  icon: "https://raw.githubusercontent.com/klei30/working-machines/main/assets/logo.png"
+  website: "https://www.workingmachines.dev"
+  repository: "https://github.com/klei30/working-machines"
