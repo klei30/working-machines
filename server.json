@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.klei30/working-machines",
   "title": "Working Machines",
-  "description": "Connect Cursor and AI agents to 1,500+ apps and 15,000+ machine-ready actions through one OAuth-protected MCP server.",
+  "description": "Connect Cursor to 1,500+ apps and 15,000+ machine-ready actions via secure MCP server.",
   "version": "1.0.2",
   "websiteUrl": "https://www.workingmachines.dev",
   "repository": {
