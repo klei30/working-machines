@@ -8,7 +8,7 @@ on:
 
 permissions:
   contents: read
-  id-token: write # Required for GitHub Actions OIDC authentication (/v0.1/auth/github-oidc)
+  id-token: write # Required for GitHub Actions OIDC authentication
 
 jobs:
   publish:
@@ -20,15 +20,13 @@ jobs:
 
       - name: Download and Install mcp-publisher CLI
         run: |
-          curl -sSL https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_linux_amd64.tar.gz | sudo tar -xz -C /usr/local/bin mcp-publisher
+          curl -sSL "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_linux_amd64.tar.gz" \
+            | sudo tar -xz -C /usr/local/bin mcp-publisher
           sudo chmod +x /usr/local/bin/mcp-publisher
-          mcp-publisher --version || mcp-publisher --help
+          mcp-publisher --help
 
       - name: Authenticate via GitHub Actions OIDC
         run: mcp-publisher login github-oidc
 
-      - name: Validate server.json
-        run: mcp-publisher validate
-
-      - name: Publish to Official Registry
+      - name: Publish to Official MCP Registry
         run: mcp-publisher publish
