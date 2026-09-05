@@ -3,7 +3,7 @@
   "name": "io.github.klei30/working-machines",
   "title": "Working Machines",
   "description": "Connect to 1,500+ apps and 15,000+ actions via one OAuth-protected MCP server.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": {
     "url": "https://github.com/klei30/working-machines",
     "source": "github"
