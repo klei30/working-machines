@@ -2,8 +2,6 @@ name: Publish to Official MCP Registry
 
 on:
   push:
-    branches:
-      - main
     tags:
       - 'v*'
   workflow_dispatch:
